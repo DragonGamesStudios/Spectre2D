@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Remaining files
+Spectre2D.sln
+Spectre2D-test/
+*.vcxproj
+*.vcxproj.filters
+*.hint
+Spectre2D_lua/ # This project is not active yet
