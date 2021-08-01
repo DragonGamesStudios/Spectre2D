@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spectre2D", "Spectre2D\Spectre2D.vcxproj", "{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spectre2D-test", "Spectre2D-test\Spectre2D-test.vcxproj", "{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spectre2D_lua", "Spectre2D_lua\Spectre2D_lua.vcxproj", "{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spectre2D_dll", "Spectre2D_dll\Spectre2D_dll.vcxproj", "{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Debug|x64.ActiveCfg = Debug|x64
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Debug|x64.Build.0 = Debug|x64
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Debug|x86.ActiveCfg = Debug|Win32
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Debug|x86.Build.0 = Debug|Win32
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Release|x64.ActiveCfg = Release|x64
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Release|x64.Build.0 = Release|x64
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Release|x86.ActiveCfg = Release|Win32
+		{C57C28AE-8C35-4F9C-B26B-790A03BCCAD6}.Release|x86.Build.0 = Release|Win32
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Debug|x64.ActiveCfg = Debug|x64
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Debug|x64.Build.0 = Debug|x64
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Debug|x86.ActiveCfg = Debug|Win32
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Debug|x86.Build.0 = Debug|Win32
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Release|x64.ActiveCfg = Release|x64
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Release|x64.Build.0 = Release|x64
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Release|x86.ActiveCfg = Release|Win32
+		{535FDD48-4DA9-418C-A0E7-1F0F55AEC813}.Release|x86.Build.0 = Release|Win32
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Debug|x64.ActiveCfg = Debug|x64
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Debug|x64.Build.0 = Debug|x64
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Debug|x86.ActiveCfg = Debug|Win32
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Debug|x86.Build.0 = Debug|Win32
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Release|x64.ActiveCfg = Release|x64
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Release|x64.Build.0 = Release|x64
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Release|x86.ActiveCfg = Release|Win32
+		{AB620B42-5FFB-4E90-9D61-DD00093C9C6A}.Release|x86.Build.0 = Release|Win32
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Debug|x64.ActiveCfg = Debug|x64
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Debug|x64.Build.0 = Debug|x64
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Debug|x86.Build.0 = Debug|Win32
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Release|x64.ActiveCfg = Release|x64
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Release|x64.Build.0 = Release|x64
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Release|x86.ActiveCfg = Release|Win32
+		{0C70A3BA-948B-4F51-AC43-C8ABA6DB598A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEA4D816-CEC4-4005-B31D-299CB2F4BD17}
+	EndGlobalSection
+EndGlobal
