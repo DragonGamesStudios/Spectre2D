@@ -50,6 +50,8 @@ namespace sp
 		* The more detailed error description.
 		*/
 		std::string description;
+
+		Error(uint16_t _code, const std::string& _description);
 	};
 
 	/*

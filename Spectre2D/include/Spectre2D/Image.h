@@ -245,7 +245,7 @@ namespace sp
 		uint32_t intent;
 		uint32_t profileData;
 		uint32_t profileSize;
-		char8_t reserved[4];
+		char reserved[4];
 	};
 
 #pragma pack(pop)

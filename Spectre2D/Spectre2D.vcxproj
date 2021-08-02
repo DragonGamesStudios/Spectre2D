@@ -149,7 +149,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>..\..\lib\glew\include\;..\..\lib\glfw\include\;..\..\lib\glm\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>extlibs\glew\include\;extlibs\glfw\include\;extlibs\glm\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

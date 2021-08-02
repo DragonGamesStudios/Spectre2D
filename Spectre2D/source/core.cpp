@@ -141,4 +141,9 @@ namespace sp
 		glfwSetClipboardString(NULL, text.c_str());
 	}
 
+	Error::Error(uint16_t _code, const std::string& _description)
+		: code(_code), description(_description)
+	{
+	}
+
 }
