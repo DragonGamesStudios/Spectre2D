@@ -370,4 +370,5 @@ Spectre2D-test/
 *.vcxproj.filters
 *.hint
 setting.json
-Spectre2D_lua/ # This project is not active yet
+Spectre2D_lua
+Spectre2D_lua # This project is not active yet
