@@ -30,3 +30,12 @@ Issues can be used for the following:
 2. Requesting features
 
 Bugs and features directly required by FactAstra project will always have priority over feature requests, but the requests will surely be taken care of.
+
+## Using the library
+1. In your project, add path to the library's include directory to additional include directories.
+
+2. Link the built Spectre2D.lib to your project. Since it's a static library, you'll also be required to link its dependencies:
+* [GLEW](http://glew.sourceforge.net/)
+* [GLFW](https://www.glfw.org/)
+
+Note, that glm is also one of dependencies of the library, but since it's header-only, there is no need to link it. Its features are, however accessible, by including most Spectre2D headers (e. g. Math.hpp).

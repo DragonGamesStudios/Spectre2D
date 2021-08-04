@@ -3,7 +3,7 @@
 #include "..\include\Spectre2D\Monitor.h"
 #include "..\include\Spectre2D\Joystick.h"
 
-#include <GLFW/glfw3.h>
+#include "..\extlibs\glfw\include\GLFW\glfw3.h"
 
 namespace sp
 {

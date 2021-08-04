@@ -4,8 +4,6 @@
 #include "Drawable.h"
 #include "Transformable.h"
 
-#include <glm/glm.hpp>
-
 namespace sp
 {
 	class RenderTarget : public virtual ResizableObject, public Transformable

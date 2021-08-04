@@ -1,7 +1,7 @@
 #include "..\include\Spectre2D\Mesh.h"
 #include "..\include\Spectre2D\core.h"
 
-#include <GL/glew.h>
+#include "..\extlibs\glew\include\GL\glew.h"
 
 namespace sp
 {

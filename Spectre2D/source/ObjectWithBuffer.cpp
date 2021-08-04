@@ -1,6 +1,6 @@
 #include "..\include\Spectre2D\ObjectWithBuffer.h"
 
-#include <GL/glew.h>
+#include "..\extlibs\glew\include\GL\glew.h"
 
 namespace sp
 {

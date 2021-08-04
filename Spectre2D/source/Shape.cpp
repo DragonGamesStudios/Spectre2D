@@ -1,7 +1,7 @@
 #include "..\include\Spectre2D\Shape.h"
 #include "..\include\Spectre2D\RenderTarget.h"
 
-#include <GL/glew.h>
+#include "..\extlibs\glew\include\GL\glew.h"
 
 namespace sp
 {

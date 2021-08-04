@@ -1,7 +1,7 @@
 #include "..\include\Spectre2D\VertexData.h"
 #include "..\include\Spectre2D\Shader.h"
 
-#include <GL/glew.h>
+#include "..\extlibs\glew\include\GL\glew.h"
 
 #include <set>
 #include <iostream>

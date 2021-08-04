@@ -68,9 +68,3 @@ source_group("Headers" FILES ${STAT_H})
 add_library(Spectre2D STATIC ${STAT_CPP} ${STAT_H})
 
 add_compile_definitions(GLEW_STATIC)
-
-target_include_directories(Spectre2D PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/Spectre2D/extlibs/glew/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/Spectre2D/extlibs/glfw/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/Spectre2D/extlibs/glm
-)

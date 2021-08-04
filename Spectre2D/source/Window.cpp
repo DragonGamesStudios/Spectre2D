@@ -4,7 +4,7 @@
 #include "..\include\Spectre2D\Cursor.h"
 #include "..\include\Spectre2D\Image.h"
 
-#include <GLFW/glfw3.h>
+#include "..\extlibs\glfw\include\GLFW\glfw3.h"
 
 namespace sp
 {

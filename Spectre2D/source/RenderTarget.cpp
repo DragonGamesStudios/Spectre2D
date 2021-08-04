@@ -1,7 +1,7 @@
 #include "..\include\Spectre2D\RenderTarget.h"
 
-#include <GL/glew.h>
-#include <glm/gtc/matrix_transform.hpp>
+#include "..\extlibs\glew\include\GL\glew.h"
+#include "../extlibs/glm/glm/gtc/matrix_transform.hpp"
 
 namespace sp
 {

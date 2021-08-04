@@ -1,5 +1,5 @@
 #pragma once
-#include <glm/glm.hpp>
+#include "../../extlibs/glm/glm/glm.hpp"
 
 #include <memory>
 #include <vector>

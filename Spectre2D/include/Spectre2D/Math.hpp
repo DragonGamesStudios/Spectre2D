@@ -1,5 +1,5 @@
-#include <glm/glm.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#include "../../extlibs/glm/glm/glm.hpp"
+#include "../../extlibs/glm/glm/gtc/type_ptr.hpp"
 
 #include <memory>
 #include <type_traits>

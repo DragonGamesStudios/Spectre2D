@@ -1,7 +1,7 @@
 #pragma once
 #include "LockableObject.h"
 
-#include <glm/glm.hpp>
+#include "../../extlibs/glm/glm/glm.hpp"
 
 #include <vector>
 

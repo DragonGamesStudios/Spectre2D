@@ -3,7 +3,7 @@
 #include <string>
 #include <functional>
 #include <vector>
-#include <glm/glm.hpp>
+#include "../../extlibs/glm/glm/glm.hpp"
 
 struct GLFWmonitor;
 

@@ -1,8 +1,6 @@
 #pragma once
 #include "ResizableObject.h"
 
-#include <glm/glm.hpp>
-
 #include <memory>
 #include <map>
 #include <string>

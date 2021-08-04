@@ -1,6 +1,6 @@
 #pragma once
 #include <filesystem>
-#include <glm/glm.hpp>
+#include "../../extlibs/glm/glm/glm.hpp"
 
 #define SPECTRE_ARROW_CURSOR 0x00036001
 #define SPECTRE_IBEAM_CURSOR 0x00036002
