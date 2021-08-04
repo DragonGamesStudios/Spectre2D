@@ -66,5 +66,3 @@ source_group("Source" FILES ${STAT_CPP})
 source_group("Headers" FILES ${STAT_H})
 
 add_library(Spectre2D STATIC ${STAT_CPP} ${STAT_H})
-
-add_compile_definitions(GLEW_STATIC)
