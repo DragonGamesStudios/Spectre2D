@@ -1,4 +1,12 @@
 #include "..\include\Spectre2D\FileSystem.h"
+#include "..\include\Spectre2D\core.h"
+
+#if defined(_WIN32)
+#include <Windows.h>
+#elif defined(__unix__)
+#include <unistd.h>
+#include <errno.h>
+#endif
 
 namespace sp
 {
@@ -12,7 +20,7 @@ namespace sp
 			size_t len;
 			_dupenv_s(&appbuff, &len, "APPDATA");
 			current_path = appbuff;
-#elif defined(__linux__)
+#elif defined(__unix__)
 			current_path = "~/.local/";
 #endif
 
@@ -82,7 +90,7 @@ namespace sp
 		return std::ifstream(current_path / path);
 	}
 
-	std::ofstream FileSystem::OpenOfile(const fs::path& path) const
+	std::ofstream FileSystem::openOfile(const fs::path& path) const
 	{
 		return std::ofstream(current_path / path);
 	}
@@ -157,13 +165,17 @@ namespace sp
 
 		fs::path rest;
 		auto it = path.begin();
-		for (it = path.begin(); it != path.end(); it++)
+		it++;
+		for (; it != path.end(); it++)
 			rest /= *it;
 
 		if (isTemplate(root) && path_templates.find(root) != path_templates.end())
 			return path_templates.at(root) / rest;
 
-		return current_path / path;
+		if (!rest.empty())
+			return current_path / root / rest;
+		else
+			return current_path / root;
 	}
 
 	fs::directory_iterator FileSystem::getFilesInDirectory(const fs::path& dirname)
@@ -179,6 +191,43 @@ namespace sp
 	bool FileSystem::isDirectory(const fs::path& path) const
 	{
 		return fs::is_directory(getCorrectPath(path));
+	}
+
+	fs::path FileSystem::getExecutable() const
+	{
+		fs::path path;
+
+#if defined(_WIN32)
+		DWORD size = 1;
+		LPWSTR buff = 0;
+
+		do
+		{
+			size <<= 1;
+			buff = new WCHAR[size];
+		} while (GetModuleFileNameW(NULL, buff, size) == size);
+
+		path = buff;
+		delete[] buff;
+
+#elif defined(__unix__)
+#include <unistd.h>
+		char* buff = 0;
+		size_t size = 1;
+		ssize_t result = 0;
+
+		do
+		{
+			buff = new char[size]{ 0 };
+			size << 1;
+			result = readlink("/proc/self/exe", buff, size);
+		} while (result == size || (result == -1 && errno == ENAMETOOLONG));
+
+		path = buff;
+
+		delete[] buff;
+#endif
+		return path;
 	}
 
 }

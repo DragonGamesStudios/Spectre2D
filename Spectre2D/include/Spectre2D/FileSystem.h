@@ -30,7 +30,7 @@ namespace sp
 
 		std::ifstream openFile(const fs::path& path) const;
 
-		std::ofstream OpenOfile(const fs::path& path) const;
+		std::ofstream openOfile(const fs::path& path) const;
 
 		bool createFile(const fs::path& filename);
 		bool createFileIfNecessary(const fs::path& filename);
@@ -49,5 +49,7 @@ namespace sp
 
 		bool isRegularFile(const fs::path& path) const;
 		bool isDirectory(const fs::path& path) const;
+
+		fs::path getExecutable() const;
 	};
 }
