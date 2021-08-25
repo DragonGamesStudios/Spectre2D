@@ -87,17 +87,17 @@ namespace sp
 
 	std::ifstream FileSystem::openFile(const fs::path& path) const
 	{
-		return std::ifstream(current_path / path);
+		return std::ifstream(getCorrectPath(path));
 	}
 
 	std::ofstream FileSystem::openOfile(const fs::path& path) const
 	{
-		return std::ofstream(current_path / path);
+		return std::ofstream(getCorrectPath(path));
 	}
 
 	bool FileSystem::createFile(const fs::path& filename)
 	{
-		std::ofstream f(filename);
+		std::ofstream f(getCorrectPath(filename));
 
 		bool worked = f.is_open();
 
@@ -211,7 +211,6 @@ namespace sp
 		delete[] buff;
 
 #elif defined(__unix__)
-#include <unistd.h>
 		char* buff = 0;
 		size_t size = 1;
 		ssize_t result = 0;
@@ -229,5 +228,4 @@ namespace sp
 #endif
 		return path;
 	}
-
 }
