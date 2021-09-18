@@ -147,6 +147,14 @@ namespace sp
 		return false;
 	}
 
+	void FileSystem::deletePathTemplate(const std::string& temp)
+	{
+		auto it = path_templates.find(temp);
+
+		if (it != path_templates.end())
+			path_templates.erase(it);
+	}
+
 	bool FileSystem::isTemplate(const std::string& name)
 	{
 		size_t s = name.size();
