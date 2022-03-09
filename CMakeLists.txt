@@ -1,0 +1,68 @@
+cmake_minimum_required(VERSION 3.19)
+
+project(Spectre2D VERSION 1.0)
+
+# C++ minimun version
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+
+set(STAT_SRCDIR "${CMAKE_CURRENT_SOURCE_DIR}/Spectre2D/source")
+set(STAT_INCDIR "${CMAKE_CURRENT_SOURCE_DIR}/Spectre2D/include/Spectre2D")
+
+# Sources and headers for main library
+set(
+    STAT_CPP
+    ${STAT_SRCDIR}/core.cpp
+    ${STAT_SRCDIR}/Cursor.cpp
+    ${STAT_SRCDIR}/Drawable.cpp
+    ${STAT_SRCDIR}/Image.cpp
+    "${STAT_SRCDIR}/internal.cpp"
+    ${STAT_SRCDIR}/Joystick.cpp
+    ${STAT_SRCDIR}/LockableObject.cpp
+    ${STAT_SRCDIR}/Mesh.cpp
+    ${STAT_SRCDIR}/Monitor.cpp
+    ${STAT_SRCDIR}/ObjectWithBuffer.cpp
+    ${STAT_SRCDIR}/RenderTarget.cpp
+    ${STAT_SRCDIR}/RenderTexture.cpp
+    ${STAT_SRCDIR}/RenderWindow.cpp
+    ${STAT_SRCDIR}/ResizableObject.cpp
+    ${STAT_SRCDIR}/Shader.cpp
+    ${STAT_SRCDIR}/Shape.cpp
+    ${STAT_SRCDIR}/RenderWindow.cpp
+    ${STAT_SRCDIR}/Transformable.cpp
+    ${STAT_SRCDIR}/VertexData.cpp
+    ${STAT_SRCDIR}/Window.cpp
+)
+
+set(
+    STAT_H
+    ${STAT_INCDIR}/core.h
+    ${STAT_INCDIR}/Cursor.h
+    ${STAT_INCDIR}/Drawable.h
+    ${STAT_INCDIR}/events.h
+    ${STAT_INCDIR}/Graphics.hpp
+    ${STAT_INCDIR}/Image.h
+    "${STAT_INCDIR}/internal.h"
+    ${STAT_INCDIR}/Joystick.h
+    ${STAT_INCDIR}/keycodes.h
+    ${STAT_INCDIR}/LockableObject.h
+    ${STAT_INCDIR}/Math.hpp
+    ${STAT_INCDIR}/Mesh.h
+    ${STAT_INCDIR}/Monitor.h
+    ${STAT_INCDIR}/ObjectWithBuffer.h
+    ${STAT_INCDIR}/RenderTarget.h
+    ${STAT_INCDIR}/RenderTexture.h
+    ${STAT_INCDIR}/RenderWindow.h
+    ${STAT_INCDIR}/ResizableObject.h
+    ${STAT_INCDIR}/Shader.h
+    ${STAT_INCDIR}/Shape.h
+    ${STAT_INCDIR}/System.hpp
+    ${STAT_INCDIR}/Transformable.h
+    ${STAT_INCDIR}/VertexData.h
+    ${STAT_INCDIR}/Window.h
+)
+
+source_group("Source" FILES ${STAT_CPP})
+source_group("Headers" FILES ${STAT_H})
+
+add_library(Spectre2D STATIC ${STAT_CPP} ${STAT_H})

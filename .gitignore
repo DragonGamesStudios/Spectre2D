@@ -371,3 +371,4 @@ Spectre2D-test/
 *.hint
 setting.json
 Spectre2D_lua
+.vscode
